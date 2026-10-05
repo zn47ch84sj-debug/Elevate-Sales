@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elevate Sales – Door-to-Door Sales & Leadership</title>
+<meta name="description" content="Join Elevate Sales. Learn the highest-income skill, get mentored, and build a real career path from your first door to running your own region. Apply today.">
+<meta name="theme-color" content="#0A0C10">
+<style>
+  :root {
+    --ink: #0A0C10;
+    --ink-2: #11141B;
+    --ink-3: #171B24;
+    --line: rgba(255,255,255,.09);
+    --line-2: rgba(255,255,255,.14);
+    --text: #F3F1EC;
+    --muted: #A9AEB8;
+    --muted-2: #8A909C;
+    --gold: #E9B95A;
+    --gold-2: #F6D894;
+    --gold-deep: #8A5D0E;
+    --paper: #F5F3EE;
+    --paper-2: #ECE8E0;
+    --paper-line: #DCD6CA;
+    --ptext: #14161B;
+    --pmuted: #555B66;
+    --radius: 18px;
+    --radius-sm: 12px;
+    --wrap: 1160px;
+    --font: "Inter", "SF Pro Text", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --display: "Inter Tight", "SF Pro Display", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1.08; letter-spacing: -0.025em; }
+  p { margin: 0; }
+  .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 768px) { .wrap { padding: 0 32px; } }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-weight: 650;
+    font-size: 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+    white-space: nowrap;
+    font-family: var(--font);
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--gold-2), var(--gold));
+    color: #1A1206;
+    box-shadow: 0 8px 30px -10px rgba(233,185,90,.6);
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 36px -10px rgba(233,185,90,.75);
+  }
+  .btn-ghost {
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+    border-color: var(--line-2);
+  }
+  .btn-ghost:hover {
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.24);
+  }
+
+  /* Header */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(10,12,16,.9);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: 16px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--display);
+    font-weight: 800;
+    letter-spacing: .12em;
+    font-size: 15px;
+  }
+  .brand img {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #fff;
+    object-fit: contain;
+  }
+  .brand span { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand small {
+    font-size: 10px;
+    letter-spacing: .2em;
+    color: var(--muted-2);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .nav {
+    display: none;
+    gap: 28px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .nav a:hover { color: var(--text); }
+  @media (min-width: 960px) { .nav { display: flex; } }
+  .header-cta {
+    min-height: 40px;
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 50% at 70% 40%, rgba(233,185,90,.08), transparent),
+      linear-gradient(180deg, var(--ink) 0%, #0d1016 100%);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 960px) {
+    .hero-grid {
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+    }
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(233,185,90,.1);
+    border: 1px solid rgba(233,185,90,.25);
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    margin-bottom: 28px;
+  }
+  .badge::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 3px rgba(233,185,90,.25);
+  }
+  .hero h1 {
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-weight: 750;
+    margin-bottom: 24px;
+    letter-spacing: -0.03em;
+  }
+  .hero h1 .gold { color: var(--gold); }
+  .hero-lead {
+    font-size: 1.125rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin-bottom: 36px;
+    line-height: 1.65;
+  }
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .hero-note {
+    font-size: 14px;
+    color: var(--muted-2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-card {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 4/5;
+    background: linear-gradient(145deg, #1a1e28, #12151c);
+    border-radius: 24px;
+    border: 1px solid rgba(233,185,90,.2);
+    box-shadow:
+      0 40px 80px -20px rgba(0,0,0,.6),
+      inset 0 1px 0 rgba(255,255,255,.05);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(10,12,16,.85));
+  }
+  .floating-badge {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20,22,28,.92);
+    border: 1px solid var(--line-2);
+    border-radius: 14px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 2;
+    min-width: 240px;
+  }
+  .floating-badge .icon-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--gold-2), var(--gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A1206;
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .floating-badge strong { display: block; font-size: 14px; }
+  .floating-badge span { font-size: 12px; color: var(--muted); }
+
+  /* Stats bar */
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 48px;
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-top: 20px;
+  }
+  .stat strong {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 750;
+    color: var(--gold);
+    letter-spacing: -0.02em;
+  }
+  .stat span {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* Section common */
+  section { padding: 90px 0; }
+  .section-label {
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: clamp(1.9rem, 4vw, 2.75rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+  .section-lead {
+    font-size: 1.125rem;
+    color: var(--muted);
+    max-width: 560px;
+    margin-bottom: 48px;
+    line-height: 1.65;
+  }
+
+  /* Mission (light) */
+  .mission {
+    background: var(--paper);
+    color: var(--ptext);
+  }
+  .mission .section-label { color: var(--gold-deep); }
+  .mission .section-lead { color: var(--pmuted); }
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .pillar {
+    background: #fff;
+    border: 1px solid var(--paper-line);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+  }
+  .pillar-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(233,185,90,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+  .pillar h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+  .pillar p {
+    font-size: 15px;
+    color: var(--pmuted);
+    line-height: 1.55;
+  }
+
+  /* Model */
+  .model-grid {
+    display: grid;
+    gap: 24px;
+  }
+  @media (min-width: 768px) {
+    .model-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .model-card {
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    position: relative;
+  }
+  .model-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: .08em;
+    margin-bottom: 16px;
+  }
+  .model-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+  .model-card p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .model-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .model-card li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .model-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
+  /* Teams */
+  .teams-grid {
+    display: grid;
+    gap: 24px;
+  }
+  @media (min-width: 768px) {
+    .teams-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .team-card {
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 36px 32px;
+  }
+  .team-card .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .team-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .team-card > p {
+    color: var(--muted);
+    margin-bottom: 22px;
+    font-size: 15px;
+  }
+  .team-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .team-card li {
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .team-card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
+  /* Path */
+  .path-steps {
+    display: grid;
+    gap: 16px;
+  }
+  .path-step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+    align-items: start;
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 24px;
+  }
+  .step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(233,185,90,.12);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 750;
+    font-size: 15px;
+  }
+  .path-step h3 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+  }
+  .path-step .role {
+    font-size: 13px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .path-step p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* Earnings */
+  .earnings-grid {
+    display: grid;
+    gap: 20px;
+  }
+  @media (min-width: 768px) {
+    .earnings-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .earn-card {
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    text-align: center;
+  }
+  .earn-card .label {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .earn-card .amount {
+    font-size: 2rem;
+    font-weight: 750;
+    color: var(--gold);
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+  .earn-card .period {
+    font-size: 14px;
+    color: var(--muted-2);
+  }
+  .disclaimer {
+    margin-top: 28px;
+    font-size: 13px;
+    color: var(--muted-2);
+    max-width: 700px;
+    line-height: 1.55;
+  }
+
+  /* How it works */
+  .steps-row {
+    display: grid;
+    gap: 20px;
+  }
+  @media (min-width: 768px) {
+    .steps-row { grid-template-columns: repeat(4, 1fr); }
+  }
+  .how-step {
+    text-align: center;
+    padding: 28px 16px;
+  }
+  .how-num {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold-2), var(--gold));
+    color: #1A1206;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+  }
+  .how-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  .how-step p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* CTA / Contact */
+  .final-cta {
+    background: linear-gradient(180deg, var(--ink-2), var(--ink));
+    border-top: 1px solid var(--line);
+    text-align: center;
+    padding: 100px 0;
+  }
+  .final-cta h2 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin-bottom: 16px;
+  }
+  .final-cta .lead {
+    color: var(--muted);
+    font-size: 1.125rem;
+    max-width: 520px;
+    margin: 0 auto 36px;
+  }
+  .contact-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 40px;
+    font-size: 15px;
+    color: var(--muted);
+  }
+  .contact-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color .2s;
+  }
+  .contact-info a:hover { color: var(--gold); }
+
+  /* Footer */
+  footer {
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted-2);
+  }
+  footer a { color: var(--muted); }
+  footer a:hover { color: var(--gold); }
+
+  /* FAQ simple */
+  .faq-list { max-width: 720px; }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .faq-item h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .faq-item p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="#" class="brand">
+      <img src="elevate-logo.png" alt="Elevate Sales logo">
+      <span>
+        ELEVATE
+        <small>SALES</small>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#mission">Why Elevate</a>
+      <a href="#teams">Teams</a>
+      <a href="#path">Career path</a>
+      <a href="#earnings">Earnings</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="https://ig.me/m/_masonwitten" class="btn btn-primary header-cta" target="_blank" rel="noopener">Apply now</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="badge">NOW HIRING · PEST & FIBER TEAMS</div>
+        <h1>For people<br>done playing<br><span class="gold">small.</span></h1>
+        <p class="hero-lead">
+          Elevate is a door-to-door sales company built to change lives. Learn the highest-income skill there is, get mentored by leaders who have done it, and follow a clear path from your first door to running your own region.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://ig.me/m/_masonwitten" class="btn btn-primary" target="_blank" rel="noopener">
+            Apply now →
+          </a>
+          <a href="https://ig.me/m/_masonwitten" class="btn btn-ghost" target="_blank" rel="noopener">
+            DM @_masonwitten on Instagram
+          </a>
+        </div>
+        <p class="hero-note">
+          ⏱ Fast response · No experience required · Work with Elevate Sales
+        </p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card"></div>
+        <div class="floating-badge">
+          <div class="icon-circle">E</div>
+          <div>
+            <strong>Elevate Sales</strong>
+            <span>Pest & Fiber Teams</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>$28M+</strong>
+        <span>Commissions paid</span>
+      </div>
+      <div class="stat">
+        <strong>150+</strong>
+        <span>Active reps</span>
+      </div>
+      <div class="stat">
+        <strong>30+</strong>
+        <span>States with markets</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission -->
+<section class="mission" id="mission">
+  <div class="wrap">
+    <div class="section-label">Our mission</div>
+    <h2 class="section-title">Sales is the vehicle. Your life is what we build.</h2>
+    <p class="section-lead">
+      Most jobs trade your time for a paycheck. Elevate exists to change lives physically, mentally, spiritually and financially, and to give you a skill set that compounds for the rest of your life.
+    </p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">💪</div>
+        <h3>Physically</h3>
+        <p>Long days on your feet build discipline, energy and habits that stick.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🧠</div>
+        <h3>Mentally</h3>
+        <p>Resilience, focus and confidence, built one conversation at a time.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">✨</div>
+        <h3>Spiritually</h3>
+        <p>Purpose, character and a team that holds you to who you want to become.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📈</div>
+        <h3>Financially</h3>
+        <p>Real income, and the know-how to make it work for you long after the season.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Model -->
+<section id="model">
+  <div class="wrap">
+    <div class="section-label">The Elevate model</div>
+    <h2 class="section-title">Three things you leave with.</h2>
+    <p class="section-lead">Not just a summer job. A foundation you can build on for the rest of your career.</p>
+    <div class="model-grid">
+      <div class="model-card">
+        <div class="model-num">01</div>
+        <h3>Learn sales</h3>
+        <p>Master the highest-income skill in the world. The ability to sell opens every door: business, investing, leadership.</p>
+        <ul>
+          <li>Proven scripts, role-play and field training</li>
+          <li>One-on-one coaching from experienced managers</li>
+          <li>Skills that transfer to any career</li>
+        </ul>
+      </div>
+      <div class="model-card">
+        <div class="model-num">02</div>
+        <h3>Build wealth</h3>
+        <p>Earning money is step one. Keeping and growing it is step two. We teach you how money works at an age when most people are just getting started.</p>
+        <ul>
+          <li>Investment education and financial literacy</li>
+          <li>Mentorship on budgeting, saving and investing</li>
+          <li>Goal-setting habits that outlast the season</li>
+        </ul>
+      </div>
+      <div class="model-card">
+        <div class="model-num">03</div>
+        <h3>Live free</h3>
+        <p>Freedom and abundance aren't things you wait for. They're things you build. Top reps earn trips, real income and options most people don't have until their 40s.</p>
+        <ul>
+          <li>Uncapped, commission-based income</li>
+          <li>Incentive trips and recognition</li>
+          <li>Ownership of your time and your results</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teams -->
+<section id="teams">
+  <div class="wrap">
+    <div class="section-label">Two teams</div>
+    <h2 class="section-title">Two products. Both proven.</h2>
+    <p class="section-lead">We keep it simple: two high-demand products, strong commission structures, and teams built to win in both.</p>
+    <div class="teams-grid">
+      <div class="team-card">
+        <div class="tag">Summer season</div>
+        <h3>Pest control</h3>
+        <p>Residential pest control, selling for Hawx. Fast close cycles, a recurring-revenue model and one of the strongest commission structures in door-to-door.</p>
+        <ul>
+          <li>A service every homeowner understands</li>
+          <li>Pre-season blitzes to get you sharp before summer</li>
+          <li>Recurring service with strong customer demand</li>
+        </ul>
+      </div>
+      <div class="team-card">
+        <div class="tag">Year-round</div>
+        <h3>Fiber internet</h3>
+        <p>Year-round fiber internet sales. A growing market, consistent demand and a product people actually want when you knock.</p>
+        <ul>
+          <li>Sell twelve months a year, not just summer</li>
+          <li>A clear upgrade homeowners are glad to hear about</li>
+          <li>Great fit for students and full-timers alike</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Career Path -->
+<section id="path">
+  <div class="wrap">
+    <div class="section-label">Career path</div>
+    <h2 class="section-title">A real ladder, with the rungs written down.</h2>
+    <p class="section-lead">Most sales jobs stop at “sell more.” At Elevate, the path to leadership is defined, measurable and open to anyone who earns it.</p>
+    <div class="path-steps">
+      <div class="path-step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Sales Rep</h3>
+          <div class="role">Where everyone starts</div>
+          <p>Learn the system, produce on the doors and live the values. Get hands-on training and a manager in your corner from day one.</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Team Lead</h3>
+          <div class="role">Proven producer</div>
+          <p>Start leading. Recruit, onboard and begin developing a small group of reps while you keep selling.</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Area Manager</h3>
+          <div class="role">$150K serviced + 5 reps or $1M serviced</div>
+          <p>Own a team end-to-end: recruiting, interviewing, onboarding and developing the next wave of leaders.</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Regional Manager</h3>
+          <div class="role">Multiple teams · $6M serviced</div>
+          <p>Lead leaders. Develop managers across multiple operating teams and build something that outlasts you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Earnings -->
+<section id="earnings">
+  <div class="wrap">
+    <div class="section-label">Earnings</div>
+    <h2 class="section-title">Real numbers. No inflation.</h2>
+    <p class="section-lead">These ranges come from our team. The work is hard, and the pay reflects it. Commission is uncapped, so your ceiling is yours to set.</p>
+    <div class="earnings-grid">
+      <div class="earn-card">
+        <div class="label">Getting started</div>
+        <div class="amount">$3K–$8K</div>
+        <div class="period">per month</div>
+      </div>
+      <div class="earn-card">
+        <div class="label">Consistent rep</div>
+        <div class="amount">$8K–$18K</div>
+        <div class="period">per month</div>
+      </div>
+      <div class="earn-card">
+        <div class="label">Top performer</div>
+        <div class="amount">$20K–$40K+</div>
+        <div class="period">per month</div>
+      </div>
+    </div>
+    <p class="disclaimer">
+      Compensation is commission-based. Ranges reflect what Elevate reps have earned during active selling months and are not guarantees, projections or typical results. Individual results vary with effort, skill, hours worked, product and market.
+    </p>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-label">How it works</div>
+    <h2 class="section-title">Apply today. Start fast.</h2>
+    <p class="section-lead">We move quickly on serious candidates. Reach out and get the process started.</p>
+    <div class="steps-row">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <h3>Message us</h3>
+        <p>DM @_masonwitten or text/call (208) 699-2433. Takes about two minutes.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <h3>Quick call</h3>
+        <p>A short conversation to see if it’s a mutual fit and answer your questions.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <h3>Onboard</h3>
+        <p>Sign your agreement, get placed on a team and start training.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">4</div>
+        <h3>Start earning</h3>
+        <p>Hit the doors with your team. Your commissions start with your first sale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">Questions, answered.</h2>
+    <p class="section-lead">Don’t see yours? Call or text (208) 699-2433 or DM @_masonwitten.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Do I need sales experience?</h3>
+        <p>No. We train you on everything: the pitch, handling objections and closing. What we look for is drive, coachability and a strong work ethic.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is this a summer job or year-round?</h3>
+        <p>Both options exist. Pest control teams run a seasonal summer push, while fiber internet teams sell year-round. We’ll help you figure out which fits your schedule.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What about housing and travel?</h3>
+        <p>Many teams sell in markets away from home. Housing and travel details vary by team and market — we’ll walk you through the specifics during your call before you commit to anything.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does pay work?</h3>
+        <p>Pay is commission-based, so your income is tied to your results. Full pay structure, hours and day-to-day life are covered on the intro call.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How fast will I hear back?</h3>
+        <p>We aim to respond the same day. Message on Instagram or text (208) 699-2433 for the fastest reply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta" id="apply">
+  <div class="wrap">
+    <h2>Done playing small?<br>Let’s talk.</h2>
+    <p class="lead">Reach out to Elevate Sales. Apply in two minutes — a real person will get back to you.</p>
+    <div class="contact-pills">
+      <a href="https://ig.me/m/_masonwitten" class="btn btn-primary" target="_blank" rel="noopener">
+        DM @_masonwitten
+      </a>
+      <a href="tel:+12086992433" class="btn btn-ghost">
+        Call / Text (208) 699-2433
+      </a>
+    </div>
+    <div class="contact-info">
+      <a href="https://instagram.com/_masonwitten" target="_blank" rel="noopener">📷 @_masonwitten</a>
+      <a href="tel:+12086992433">📞 (208) 699-2433</a>
+      <span>Elevate Sales · Pest & Fiber Teams</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Elevate Sales. Built for people who are done playing small.</p>
+  </div>
+</footer>
+
+</body>
+</html>
